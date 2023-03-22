@@ -8,10 +8,10 @@ const AddPostForm = () => {
   const dispatch = useDispatch();
 
   const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
   const [userId, setUserId] = useState("");
+  const [content, setContent] = useState("");
 
-  const users = useSelector(selectAllUsers);
+  const allUsers = useSelector(selectAllUsers);
 
   const onTitleChanged = (e) => setTitle(e.target.value);
   const onContentChanged = (e) => setContent(e.target.value);
@@ -27,7 +27,7 @@ const AddPostForm = () => {
 
   const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
 
-  const usersOptions = users.map((user) => (
+  const usersOptions = allUsers.map((user) => (
     <option key={user.id} value={user.id}>
       {user.name}
     </option>
@@ -39,11 +39,11 @@ const AddPostForm = () => {
       <form>
         <label htmlFor="postTitle">Post Title:</label>
         <input
+          autoFocus
           type="text"
           id="postTitle"
           name="postTitle"
           value={title}
-          autofocus
           onChange={onTitleChanged}
         />
         <label htmlFor="postAuthor">Author:</label>
@@ -65,4 +65,5 @@ const AddPostForm = () => {
     </section>
   );
 };
+
 export default AddPostForm;
