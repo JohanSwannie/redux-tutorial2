@@ -22,6 +22,8 @@ const AddPostForm = () => {
       dispatch(postAdded(title, content, userId));
       setTitle("");
       setContent("");
+      setUserId("");
+      document.getElementById("postTitle").focus();
     }
   };
 
