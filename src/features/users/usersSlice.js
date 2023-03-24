@@ -1,17 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
-  { id: "0", name: "Johan Swan" },
-  { id: "1", name: "Estelle Vorster" },
-  { id: "2", name: "Petra Davis" },
-  { id: "3", name: "Ida Maree" },
-  { id: "4", name: "Sanette Bezuidenhout" },
-  { id: "5", name: "Amanda Smit" },
-  { id: "6", name: "Andries Theron" },
+  { id: "0", name: "Luke Brown" },
+  { id: "1", name: "Sally Sheehan" },
+  { id: "2", name: "Matthew Jones" },
+  { id: "3", name: "Tom Sidaway" },
+  { id: "4", name: "Terry Black" },
+  { id: "5", name: "Mary Cooper" },
+  { id: "6", name: "Zack Frost" },
+  { id: "7", name: "Alicia Jackson" },
 ];
 
 const usersSlice = createSlice({
-  name: "users",
+  name: "userspopo",
   initialState,
   reducers: {},
 });
