@@ -11,7 +11,7 @@ const AddPostForm = () => {
   const [userId, setUserId] = useState("");
   const [content, setContent] = useState("");
 
-  const allUsers = useSelector(selectAllUsers);
+  const users = useSelector(selectAllUsers);
 
   const onTitleChanged = (e) => setTitle(e.target.value);
   const onContentChanged = (e) => setContent(e.target.value);
@@ -25,9 +25,9 @@ const AddPostForm = () => {
     }
   };
 
-  const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
+  const openSaveButton = Boolean(title) && Boolean(content) && Boolean(userId);
 
-  const usersOptions = allUsers.map((user) => (
+  const usersOptions = users.map((user) => (
     <option key={user.id} value={user.id}>
       {user.name}
     </option>
@@ -58,7 +58,11 @@ const AddPostForm = () => {
           value={content}
           onChange={onContentChanged}
         />
-        <button type="button" onClick={onSavePostClicked} disabled={!canSave}>
+        <button
+          type="button"
+          onClick={onSavePostClicked}
+          disabled={!openSaveButton}
+        >
           Save Post
         </button>
       </form>
