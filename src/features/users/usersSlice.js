@@ -11,11 +11,11 @@ const initialState = [
 ];
 
 const usersSlice = createSlice({
-  name: "allUsers",
+  name: "users",
   initialState,
   reducers: {},
 });
 
-export const selectAllUsers = (state) => state.allUsers;
+export const selectAllUsers = (state) => state.users;
 
 export default usersSlice.reducer;
