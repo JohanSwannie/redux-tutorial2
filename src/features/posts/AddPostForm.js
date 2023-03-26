@@ -23,8 +23,8 @@ const AddPostForm = () => {
       setTitle("");
       setContent("");
       setUserId("");
-      document.getElementById("postTitle").focus();
     }
+    document.getElementById("postTitle").focus();
   };
 
   const openSaveButton = Boolean(title) && Boolean(content) && Boolean(userId);
