@@ -4,9 +4,9 @@ import { reactionAdded } from "./postsSlice";
 const reactionEmoji = {
   thumbsUp: "👍",
   wow: "😮",
+  sad: "😔",
   heart: "❤️",
   trophy: "🏆",
-  sad: "😔",
 };
 
 const ReactionButtons = ({ post }) => {
