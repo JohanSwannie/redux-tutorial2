@@ -6,6 +6,7 @@ import ReactionButtons from "./ReactionButtons";
 
 const PostsList = () => {
   const posts = useSelector(selectAllPosts);
+  console.log(posts.slice());
 
   const orderedPosts = posts
     .slice()
