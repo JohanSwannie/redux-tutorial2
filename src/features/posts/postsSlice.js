@@ -3,11 +3,12 @@ import { sub } from "date-fns";
 
 const initialState = [
   {
-    id: "1",
+    id: nanoid(),
     title: "Beautiful Exotic Kaiteriteri",
     content:
       "Want to visit one of the most beautiful locations on earth? Visit Kaiteriteri.",
     date: sub(new Date(), { minutes: 1 }).toISOString(),
+    userId: "0",
     reactions: {
       thumbsUp: 0,
       wow: 0,
@@ -17,11 +18,12 @@ const initialState = [
     },
   },
   {
-    id: "2",
+    id: nanoid(),
     title: "Lake Te Anau",
     content:
       "In the deep south of the South Island of New Zealand is exotic Lake Te Anau.",
     date: sub(new Date(), { minutes: 2 }).toISOString(),
+    userId: "6",
     reactions: {
       thumbsUp: 0,
       wow: 0,
