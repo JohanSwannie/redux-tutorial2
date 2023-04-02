@@ -4,7 +4,7 @@ import { sub } from "date-fns";
 const initialState = [
   {
     id: nanoid(),
-    title: "Beautiful Exotic Kaiteriteri",
+    title: "Beautiful Islands",
     content:
       "Want to visit one of the most beautiful locations on earth? Visit Kaiteriteri.",
     date: sub(new Date(), { minutes: 1 }).toISOString(),
