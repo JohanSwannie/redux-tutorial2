@@ -12,7 +12,7 @@ const PostsList = () => {
     .slice()
     .sort((a, b) => b.date.localeCompare(a.date));
 
-  const renderedPosts = orderedPosts.map((post) => (
+  const postsRendered = orderedPosts.map((post) => (
     <article key={post.id}>
       <h3>{post.title}</h3>
       <p>{post.content.substring(0, 200)}</p>
@@ -27,7 +27,7 @@ const PostsList = () => {
   return (
     <section>
       <h2>Posts</h2>
-      {renderedPosts}
+      {postsRendered}
     </section>
   );
 };
