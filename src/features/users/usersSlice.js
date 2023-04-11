@@ -12,6 +12,8 @@ const initialState = [
   { id: "8", name: "Trish Frost" },
   { id: "9", name: "Alex Johnson" },
   { id: "10", name: "Barry Cushnie" },
+  { id: "11", name: "Andrew Armstrong" },
+  { id: "12", name: "Natasha McArthur" },
 ];
 
 const usersSlice = createSlice({
