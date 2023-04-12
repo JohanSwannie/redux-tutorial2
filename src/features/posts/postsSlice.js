@@ -20,7 +20,7 @@ const initialState = [
     id: nanoid(),
     title: "Lake Te Anau",
     content:
-      "In the deep south of the South Island of New Zealand is exotic Lake Te Anau.",
+      "In the deep south of the South Island of New Zealand is exotic Lake Te Anau, one of the country's most popular tourist destinations.",
     date: sub(new Date(), { minutes: 2 }).toISOString(),
     userId: "6",
     reactions: {
