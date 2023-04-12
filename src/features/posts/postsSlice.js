@@ -11,8 +11,8 @@ const initialState = [
     reactions: {
       thumbsUp: 0,
       wow: 0,
-      sad: 0,
       heart: 0,
+      sad: 0,
     },
   },
   {
@@ -25,8 +25,8 @@ const initialState = [
     reactions: {
       thumbsUp: 0,
       wow: 0,
-      sad: 0,
       heart: 0,
+      sad: 0,
     },
   },
 ];
@@ -50,8 +50,8 @@ const postsSlice = createSlice({
             reactions: {
               thumbsUp: 0,
               wow: 0,
-              sad: 0,
               heart: 0,
+              sad: 0,
             },
           },
         };
