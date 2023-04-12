@@ -4,7 +4,7 @@ import { sub } from "date-fns";
 const initialState = [
   {
     id: nanoid(),
-    title: "Beautiful Islands",
+    title: "Beautiful Exotic Islands",
     content: "Want to visit one of the most beautiful Islands on earth?",
     date: sub(new Date(), { minutes: 1 }).toISOString(),
     userId: "0",
