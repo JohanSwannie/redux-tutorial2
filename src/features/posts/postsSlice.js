@@ -13,7 +13,6 @@ const initialState = [
       wow: 0,
       sad: 0,
       heart: 0,
-      trophy: 0,
     },
   },
   {
@@ -28,7 +27,6 @@ const initialState = [
       wow: 0,
       sad: 0,
       heart: 0,
-      trophy: 0,
     },
   },
 ];
@@ -54,7 +52,6 @@ const postsSlice = createSlice({
               wow: 0,
               sad: 0,
               heart: 0,
-              trophy: 0,
             },
           },
         };
