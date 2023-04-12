@@ -31,4 +31,5 @@ const PostsList = () => {
     </section>
   );
 };
+
 export default PostsList;
