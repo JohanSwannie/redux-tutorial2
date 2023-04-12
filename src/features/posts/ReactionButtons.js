@@ -6,7 +6,6 @@ const reactionEmoji = {
   wow: "😮",
   sad: "😔",
   heart: "❤️",
-  trophy: "🏆",
 };
 
 const ReactionButtons = ({ post }) => {
