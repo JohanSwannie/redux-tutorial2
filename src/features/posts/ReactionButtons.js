@@ -5,6 +5,7 @@ const reactionEmoji = {
   thumbsUp: "👍",
   wow: "😮",
   heart: "❤️",
+  heartface: "😍",
   sad: "😔",
 };
 
